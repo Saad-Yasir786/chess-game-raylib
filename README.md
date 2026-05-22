@@ -21,3 +21,15 @@ A high-performance, interactive 2D Chess game built from scratch using **C++** a
 ├── BSAI25013-Piece.h/.cpp   # Polymorphic Abstract Base Class for Common Movement/Color Vectors
 ├── BSAI25013-Helper.h       # Structural Framework for Layout Records, Turn Toggles, and State Enums
 └── BSAI25013-[PieceName]    # Isolated Subclasses containing Strict Rules for Piece Logic
+## ⚙️ Compilation & Build Instructions
+
+Ensure you have your standard C++ compiler and the Raylib library binaries installed on your local environment.
+
+### Linux/macOS Build:
+```bash
+g++ BSAI25013-main.cpp BSAI25013-Board.cpp BSAI25013-Cell.cpp BSAI25013-Piece.cpp \
+BSAI25013-Pawn.cpp BSAI25013-Knight.cpp BSAI25013-Bishop.cpp BSAI25013-Rook.cpp \
+BSAI25013-Queen.cpp BSAI25013-King.cpp \
+-lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o ChessRaylib
+
+./ChessRaylib
